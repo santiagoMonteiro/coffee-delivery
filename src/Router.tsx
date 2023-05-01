@@ -10,7 +10,7 @@ export function Router() {
       <Route path="/" element={<DefaultLayout />}>
         <Route path="coffee-delivery" element={<Home />} />
         <Route path="coffee-delivery/checkout" element={<Checkout />} />
-        <Route path="coffee-delivery" element={<Success />} />
+        <Route path="coffee-delivery/success" element={<Success />} />
       </Route>
     </Routes>
   )
