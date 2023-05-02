@@ -1,24 +1,31 @@
-import { ShoppingCart } from '@phosphor-icons/react'
+import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
+import styles from './styles.module.scss'
 
 export function GeneralInfo() {
   return (
-    <div>
+    <div className={styles.container}>
       <div>
-        <span>
+        <i>
           <ShoppingCart />
-        </span>
+        </i>
         <span>Compra simples e segura</span>
       </div>
       <div>
-        <img src="" alt="" />
+        <i>
+          <Package />
+        </i>
         <span>Embalagem mantém o café intacto</span>
       </div>
       <div>
-        <img src="" alt="" />
+        <i>
+          <Timer />
+        </i>
         <span>Entrega rápida e rastreada</span>
       </div>
       <div>
-        <img src="" alt="" />
+        <i>
+          <Coffee />
+        </i>
         <span>O café chega fresquinho até você</span>
       </div>
     </div>
