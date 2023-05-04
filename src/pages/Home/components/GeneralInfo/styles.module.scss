@@ -1,6 +1,26 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 35.4375rem;
-  grid-row-gap: 1.25rem;
+  display: flex;
+  gap: 2.5rem;
+  i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.75rem;
+
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+    background: black;
+
+    svg {
+      color: var(--background);
+    }
+  }
+}
+
+.advantageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }

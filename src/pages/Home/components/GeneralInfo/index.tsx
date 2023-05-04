@@ -4,29 +4,33 @@ import styles from './styles.module.scss'
 export function GeneralInfo() {
   return (
     <div className={styles.container}>
-      <div>
-        <i>
-          <ShoppingCart />
-        </i>
-        <span>Compra simples e segura</span>
+      <div className={styles.advantageContainer}>
+        <div>
+          <i style={{background: "var(--yellow-dark)"}}>
+            <ShoppingCart weight="fill" />
+          </i>
+          <span>Compra simples e segura</span>
+        </div>
+        <div>
+          <i style={{background: "var(--yellow)"}}>
+            <Timer weight="fill" />
+          </i>
+          <span>Entrega rápida e rastreada</span>
+        </div>
       </div>
-      <div>
-        <i>
-          <Package />
-        </i>
-        <span>Embalagem mantém o café intacto</span>
-      </div>
-      <div>
-        <i>
-          <Timer />
-        </i>
-        <span>Entrega rápida e rastreada</span>
-      </div>
-      <div>
-        <i>
-          <Coffee />
-        </i>
-        <span>O café chega fresquinho até você</span>
+      <div className={styles.advantageContainer}>
+        <div>
+          <i style={{background: "var(--base-text)"}}>
+            <Package weight="fill" />
+          </i>
+          <span>Embalagem mantém o café intacto</span>
+        </div>
+        <div>
+          <i style={{background: "var(--purple)"}}>
+            <Coffee weight="fill" />
+          </i>
+          <span>O café chega fresquinho até você</span>
+        </div>
       </div>
     </div>
   )
