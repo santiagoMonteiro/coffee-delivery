@@ -22,3 +22,16 @@
 .infoContainer {
   max-width: 36.75rem;
 }
+
+@media(max-width: 768px) {
+  .generalInfoContainer {
+    flex-direction: column-reverse;
+  }
+  
+  .coffeeBanner {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+  }
+}

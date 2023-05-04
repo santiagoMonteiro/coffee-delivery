@@ -15,7 +15,7 @@ export function Home() {
           </p>
           <GeneralInfo />
         </div>
-        <img src={coffeeBannerImg} alt="" />
+        <img className={styles.coffeeBanner} src={coffeeBannerImg} alt="" />
       </section>
     </main>
   )
