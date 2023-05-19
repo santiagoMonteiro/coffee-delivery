@@ -1,7 +1,7 @@
-import { GeneralInfo } from './components/GeneralInfo'
 import coffeeBannerImg from '../../assets/coffee-banner.svg'
 
 import styles from "./styles.module.scss"
+import { DeliverySkillsContainer } from './components/DeliverySkillsContainer'
 
 export function Home() {
   return (
@@ -13,9 +13,13 @@ export function Home() {
             Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
             hora
           </p>
-          <GeneralInfo />
+          <DeliverySkillsContainer />
         </div>
         <img className={styles.coffeeBanner} src={coffeeBannerImg} alt="" />
+      </section>
+      <section className={styles.coffeeContainer}>
+        <h2>Nossos cafés</h2>
+
       </section>
     </main>
   )

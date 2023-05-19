@@ -23,15 +23,30 @@
   max-width: 36.75rem;
 }
 
-@media(max-width: 768px) {
-  .generalInfoContainer {
-    flex-direction: column-reverse;
+.coffeeContainer {
+  margin-top: 8rem;
+
+  h2 {
+    font-size: 2rem;
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    color: var(--base-title);
   }
-  
+}
+
+@media (max-width: 768px) {
+  .generalInfoContainer {
+    flex-direction: column;
+  }
+
   .coffeeBanner {
     visibility: hidden;
     opacity: 0;
     position: absolute;
     z-index: 100;
+  }
+
+  .coffeeContainer {
+    margin-top: 4rem;
   }
 }

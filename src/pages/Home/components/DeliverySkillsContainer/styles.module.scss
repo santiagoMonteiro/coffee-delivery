@@ -24,3 +24,10 @@
   flex-direction: column;
   gap: 1.25rem;
 }
+
+@media(max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}

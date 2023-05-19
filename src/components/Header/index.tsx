@@ -13,7 +13,7 @@ export function Header() {
       <div className={styles.generalInfo}>
         <div className={styles.location}>
           <MapPin color="#8047F8" size={22} weight="fill" />
-          <span>Porto Alegre, RS</span>
+          <span>Manaus, AM</span>
         </div>
 
         <CartButton />

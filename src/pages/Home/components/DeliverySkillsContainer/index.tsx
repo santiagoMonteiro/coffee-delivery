@@ -1,7 +1,7 @@
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import styles from './styles.module.scss'
 
-export function GeneralInfo() {
+export function DeliverySkillsContainer() {
   return (
     <div className={styles.container}>
       <div className={styles.advantageContainer}>
