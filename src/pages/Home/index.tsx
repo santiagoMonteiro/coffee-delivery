@@ -2,6 +2,7 @@ import coffeeBannerImg from '../../assets/coffee-banner.svg'
 
 import styles from "./styles.module.scss"
 import { DeliverySkillsContainer } from './components/DeliverySkillsContainer'
+import { CoffeeContainer } from './components/CoffeeContainer'
 
 export function Home() {
   return (
@@ -19,7 +20,7 @@ export function Home() {
       </section>
       <section className={styles.coffeeContainer}>
         <h2>Nossos cafés</h2>
-
+        <CoffeeContainer />
       </section>
     </main>
   )
