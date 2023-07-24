@@ -1,6 +1,6 @@
 import { DeliverySkillsContainer } from '../DeliverySkillsContainer'
 import styles from './styles.module.scss'
-import coffeeBannerImg from '/src/assets/coffee-banner.svg'
+import coffeeBannerImg from '@/assets/coffee-banner.svg'
 
 export function GeneralInfo() {
   return (
