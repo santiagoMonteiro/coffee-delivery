@@ -1,0 +1,16 @@
+.coffeeContainer {
+  margin-top: 8rem;
+
+  h2 {
+    font-size: 2rem;
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    color: var(--base-title);
+  }
+}
+
+@media (max-width: 768px) {
+  .coffeeContainer {
+    margin-top: 4rem;
+  }
+}
