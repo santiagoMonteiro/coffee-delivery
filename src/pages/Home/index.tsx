@@ -5,7 +5,6 @@ export function Home() {
   return (
     <main>
       <GeneralInfo />
-
       <CoffeeMenu />
     </main>
   )

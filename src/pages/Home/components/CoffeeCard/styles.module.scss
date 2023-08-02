@@ -1,0 +1,30 @@
+.cardContainer {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  max-width: 16rem;
+  border-radius: 0.38rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--base-card);
+
+  img {
+    margin-top: -1.25rem;
+    width: 120px;
+  }
+
+  h3 {
+    font-family: "Baloo 2";
+    color: var(--base-subtitle);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    line-height: 130%;
+    text-align: center;
+    color: var(--base-label);
+    margin-bottom: 2rem;
+  }
+}

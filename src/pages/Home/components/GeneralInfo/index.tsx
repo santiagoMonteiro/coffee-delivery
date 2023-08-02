@@ -1,4 +1,4 @@
-import { DeliverySkillsContainer } from '../DeliverySkillsContainer'
+import { DeliveryInfo } from '../DeliverySkillsContainer'
 import styles from './styles.module.scss'
 import coffeeBannerImg from '@/assets/coffee-banner.svg'
 
@@ -11,7 +11,7 @@ export function GeneralInfo() {
           Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
           hora
         </p>
-        <DeliverySkillsContainer />
+        <DeliveryInfo />
       </div>
       <img className={styles.coffeeBanner} src={coffeeBannerImg} alt='' />
     </section>

@@ -4,9 +4,9 @@ import styles from './styles.module.scss'
 
 export function CoffeeMenu() {
   return (
-    <section className={styles.coffeeContainer}>
+    <section className={styles.coffeeSessionContainer}>
       <h2>Nossos cafés</h2>
-      <div>
+      <div className={styles.coffeeSetContainer}>
         {coffeeSchema.map((coffeeData) => (
           <CoffeeCard coffeeData={coffeeData} />
         ))}

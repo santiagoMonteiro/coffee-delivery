@@ -1,4 +1,4 @@
-.coffeeContainer {
+.coffeeSessionContainer {
   margin-top: 8rem;
 
   h2 {
@@ -9,8 +9,15 @@
   }
 }
 
+.coffeeSetContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3.37rem;
+  gap: 2rem;
+}
+
 @media (max-width: 768px) {
-  .coffeeContainer {
+  .coffeeSessionContainer {
     margin-top: 4rem;
   }
 }

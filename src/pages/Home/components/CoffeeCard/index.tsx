@@ -1,4 +1,5 @@
-// import styles from "./styles.module.scss"
+import { Tags } from '../Tags'
+import styles from "./styles.module.scss"
 
 interface CoffeeCardProps {
   coffeeData: {
@@ -10,13 +11,13 @@ interface CoffeeCardProps {
   }
 }
 
-export function CoffeeCard({ coffeeData: { name, src, description } }: CoffeeCardProps) {
+export function CoffeeCard({ coffeeData: { name, src, description, tags } }: CoffeeCardProps) {
   return (
-    <div>
+    <div className={styles.cardContainer}>
       <img src={src} alt="" />
-      <span>{}</span>
+      <Tags tagList={tags} />
       <h3>{name}</h3>
-      <p>{description}</p>
+      <p className={styles.description}>{description}</p>
     </div>
   )
 }
