@@ -4,7 +4,7 @@ interface TagsProps {
   tagList: string[]
 }
 
-export function Tags({ tagList }: TagsProps) {
+export function CoffeeTags({ tagList }: TagsProps) {
   return (
     <div className={styles.tagContainer}>
       {tagList.map((tag) => {

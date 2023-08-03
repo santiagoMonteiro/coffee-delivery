@@ -1,4 +1,5 @@
-import { Tags } from '../Tags'
+import { CoffeeTags } from '../CoffeeTags'
+import { PriceAndAmountSelector } from '../PriceAndAmountSelector'
 import styles from "./styles.module.scss"
 
 interface CoffeeCardProps {
@@ -15,9 +16,10 @@ export function CoffeeCard({ coffeeData: { name, src, description, tags } }: Cof
   return (
     <div className={styles.cardContainer}>
       <img src={src} alt="" />
-      <Tags tagList={tags} />
+      <CoffeeTags tagList={tags} />
       <h3>{name}</h3>
       <p className={styles.description}>{description}</p>
+      <PriceAndAmountSelector />
     </div>
   )
 }
