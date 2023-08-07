@@ -1,7 +1,12 @@
 .container {
   display: flex;
-  padding: 2rem 0;
+  padding: 2rem 10rem;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--background);
 }
 
 .generalInfo {
