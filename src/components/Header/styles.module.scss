@@ -1,12 +1,18 @@
+.global {
+  background-color: var(--background);
+  position: fixed;
+  padding: 2rem 1rem;
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+}
+
 .container {
   display: flex;
-  padding: 2rem 10rem;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: var(--background);
+  width: 100%;
+  max-width: 1152px;
 }
 
 .generalInfo {

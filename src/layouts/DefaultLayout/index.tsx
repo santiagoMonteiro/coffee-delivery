@@ -4,9 +4,11 @@ import styles from './styles.module.scss'
 
 export function DefaultLayout() {
   return (
-    <div className={styles.container}>
+    <>
       <Header />
-      <Outlet />
-    </div>
+      <div className={styles.container}>
+        <Outlet />
+      </div>
+    </>
   )
 }
