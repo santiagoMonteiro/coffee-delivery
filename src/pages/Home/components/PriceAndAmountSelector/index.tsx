@@ -7,10 +7,10 @@ export function PriceAndAmountSelector() {
   return (
     <div className={styles.container}>
       <Price />
-      <div className={styles.container}>
-        <AmountSelector />
-        <AddToCartButton />
-      </div>
+      <div></div>
+      <AmountSelector />
+      <div></div>
+      <AddToCartButton />
     </div>
   )
 }

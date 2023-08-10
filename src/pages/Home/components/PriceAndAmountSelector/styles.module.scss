@@ -1,4 +1,6 @@
 .container {
-  display: flex;
-  // justify-content: space-between;
+  display: grid;
+  width: 100%;
+  grid-template-columns: min-content auto min-content 0.5rem min-content ;
+  padding: 0 0.25rem;
 }
