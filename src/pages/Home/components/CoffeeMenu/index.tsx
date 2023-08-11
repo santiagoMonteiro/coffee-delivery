@@ -1,5 +1,5 @@
+import { coffeeSchema } from '@/schemas/coffeeSchema'
 import { CoffeeCard } from '../CoffeeCard'
-import { coffeeSchema } from '../CoffeeCard/coffeeSchema'
 import styles from './styles.module.scss'
 
 export function CoffeeMenu() {

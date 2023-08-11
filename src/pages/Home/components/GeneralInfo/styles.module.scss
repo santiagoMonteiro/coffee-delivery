@@ -4,7 +4,6 @@
   align-items: center;
   margin-top: 5.88rem;
 
-
   h1 {
     font-family: 'Baloo 2';
     font-weight: 800;
@@ -22,6 +21,7 @@
   }
 
   &::before {
+    z-index: -1;
     content: '';
     height: 100%;
     width: 100%;
@@ -32,6 +32,7 @@
     background-image: url('src/assets/home-background.svg');
     background-size: cover;
     background-position: center;
+    filter: blur(80px);
   }
 }
 
