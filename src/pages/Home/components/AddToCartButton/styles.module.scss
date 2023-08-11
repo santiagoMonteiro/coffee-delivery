@@ -11,4 +11,8 @@
     width: 1.375rem;
     height: 1.375rem;
   }
+
+  &:hover {
+    background-color: var(--purple);
+  }
 }
