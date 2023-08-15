@@ -8,7 +8,7 @@ export function CoffeeMenu() {
       <h2>Nossos cafés</h2>
       <div className={styles.coffeeSetContainer}>
         {coffeeSchema.map((coffeeData) => (
-          <CoffeeCard coffeeData={coffeeData} />
+          <CoffeeCard key={coffeeData.id} coffeeData={coffeeData} />
         ))}
       </div>
     </section>

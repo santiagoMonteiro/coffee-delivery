@@ -1,4 +1,13 @@
-export const coffeeSchema = [
+type CoffeeItem = {
+  id: number
+  name: string
+  description: string
+  price: number
+  tags: string[]
+  src: string
+}
+
+export const coffeeSchema: CoffeeItem[] = [
   {
     id: 1,
     name: 'Expresso Tradicional',
