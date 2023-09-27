@@ -12,7 +12,6 @@ interface CartContextData {
 interface Item {
   id: number
   amount: number
-  price: number
 }
 
 interface CartProviderProps {
@@ -31,25 +30,22 @@ export function CartProvider({ children }: CartProviderProps) {
   }, 0)
 
   function addItemToCart(id: number, amount: number) {
+    let isNewItem = true
+
     const newCartItems = cartItems.map((item) => {
       if (item.id === id) {
+        isNewItem = false
         return {
           id,
-          amount,
-          price: calculateItemPrice(id, amount),
+          amount: item.amount + amount,
         }
       }
 
       return item
     })
 
-    const isNewItem = newCartItems.length === cartItems.length
-
     if (isNewItem) {
-      setCartItems([
-        ...cartItems,
-        { id, amount, price: calculateItemPrice(id, amount) },
-      ])
+      setCartItems([...cartItems, { id, amount }])
     } else {
       setCartItems(newCartItems)
     }

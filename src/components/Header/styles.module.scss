@@ -1,6 +1,7 @@
 .global {
   background-color: var(--background);
   position: fixed;
+  z-index: 1;
   padding: 2rem 1rem;
   width: 100%;
 

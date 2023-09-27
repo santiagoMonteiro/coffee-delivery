@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styles from './styles.module.scss'
 import { Minus, Plus } from '@phosphor-icons/react'
 
-export function AmountSelector() {
+export function  AmountSelector() {
   const [value, setValue] = useState(0)
 
   function updateValue(valueToAdd: number) {
